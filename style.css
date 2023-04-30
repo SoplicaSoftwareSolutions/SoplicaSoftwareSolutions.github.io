@@ -32,6 +32,7 @@ nav{
     top: 0px;
     z-index: 2;
     background-color: white;
+    max-width: 100%;
 }
 
 nav li{
@@ -223,7 +224,7 @@ section{
 }
 
 .services-img img{
-    width: 70%;
+    width: 90%;
 }
 
 ol {
@@ -416,7 +417,7 @@ article div:nth-of-type(2) {
 
  @media only screen and (max-width: 650px) {
     body{
-        overflow-x: hidden;
+        overflow: hidden;
     }
         /* Hide scrollbar for Chrome, Safari and Opera */
     body::-webkit-scrollbar {
@@ -587,7 +588,7 @@ article div:nth-of-type(2) {
     }
 
     .services-img img{
-        width: 80%;
+        width: 90%;
     }
 
     li{
