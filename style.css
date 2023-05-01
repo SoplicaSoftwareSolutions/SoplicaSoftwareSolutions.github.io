@@ -354,7 +354,17 @@ footer{
 }
 
 .socials i{
-    margin: 0.1em;
+    margin: 0.15em;
+    transition: ease-out 0.15s;
+}
+
+.socials i:hover{
+    color: var(--primary);
+    cursor: pointer;
+    transition: ease-out 0.15s;
+    -webkit-filter: brightness(120%);
+    filter: brightness(120%);
+    transform: scale(110%);
 }
 
 .socials i:first-of-type{

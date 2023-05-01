@@ -8,7 +8,7 @@ $(document).ready(function(){
      arr = JSON.parse(data)
      arr.forEach(function(item){
        
-            let id = generateGuid()
+        let id = generateGuid()
         jQuery('<div>', {
             id: id,
             class: 'card',
@@ -26,9 +26,17 @@ $(document).ready(function(){
         }).appendTo(card);
 
         let header = $("#"+id+" header")
+        let bulletId = generateGuid()
         jQuery('<span>', {
-            class: 'bullet-img'
+            class: 'bullet-img',
+            id: bulletId,
         }).appendTo(header);
+
+        let img = $("#"+bulletId);
+        jQuery('<i>', {
+            class: 'fa-solid fa-user',
+            style: 'color: #ffffff;'
+        }).appendTo(img);
 
         jQuery('<div>', {
             class: 'bullet-user'
