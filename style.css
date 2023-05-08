@@ -33,6 +33,7 @@ nav{
     z-index: 2;
     background-color: white;
     max-width: 100%;
+    overflow: hidden;
 }
 
 nav li{
@@ -339,7 +340,7 @@ footer{
     width: 100vw;
     height: 10vh;
     background-color: var(--royal-gray);
-    padding: 5em !important;
+    padding: 4em !important;
     position: relative;
 }
 
@@ -347,16 +348,24 @@ footer{
     width: 15%;
 }
 
+
+
 .socials{
     display: flex;
     align-items: center;
     justify-content: center;
     align-self: flex-end;
+    left: 92%;
 }
 
 .socials i{
     margin: 0.15em;
     transition: ease-out 0.15s;
+}
+
+.socials a {
+    color: #415462;
+    width: fit-content;
 }
 
 .socials i:hover{
@@ -549,13 +558,13 @@ article div:nth-of-type(2) {
     }
 
     .socials{
-        top: 70%;
+        top: 72%;
         left: 50%;
     }
 
     .socials i{
         font-size: 1.3rem;
-        margin-right: 0.5rem;
+        margin-right: 0.7rem;
     }
  }
 
@@ -572,6 +581,9 @@ article div:nth-of-type(2) {
     }
     h2{
         font-size: 1.3rem ;
+    }
+    .nav-links{
+        margin-right: 0% !important;
     }
 
     .grid h2{
